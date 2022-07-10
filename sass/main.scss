@@ -1,8 +1,9 @@
-@import "./utils/variables";
-@import "./utils/breakpoints";
-@import "./utils/placeholders";
-@import "./base/normalize";
-@import "./base/base";
-@import "./fonts/fonts";
-@import "./components/container";
-@import "./layout/header";
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/breakpoints';
+@import './utils/placeholders';
+@import './base/normalize';
+@import './base/base';
+@import './fonts/fonts';
+@import './components/container';
+@import './layout/header';
