@@ -1,4 +1,8 @@
 .page-header {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .page-header-mobile {
@@ -14,7 +18,7 @@
 .logo {
   @extend %link;
 
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
@@ -30,4 +34,53 @@
   width: 40px;
   height: 40px;
   padding: 12px 8px;
+}
+
+.main-nav {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-list {
+  @extend %list;
+
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-list__item:not(:last-child) {
+  margin-right: 49px;
+}
+
+.nav-list__link {
+  @extend %link;
+
+  @include font(500, 14px, 1.14, 0.02em);
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+}
+
+.auth-nav {
+  @extend %list;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.auth-nav__link {
+  @extend %link;
+  color: $secondary-text-color;
 }
