@@ -75,12 +75,15 @@
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
 
 .auth-nav__link {
   @extend %link;
+
+  display: inline-flex;
+  align-items: center;
   color: $secondary-text-color;
 }
