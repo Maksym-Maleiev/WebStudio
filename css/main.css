@@ -422,6 +422,18 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .auth-nav__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -430,5 +442,15 @@ img {
       -ms-flex-align: center;
           align-items: center;
   color: #757575;
+  cursor: pointer;
+}
+
+.auth-nav__link:hover, .auth-nav__link:focus {
+  color: #2196f3;
+}
+
+.auth-nav__icon {
+  margin-right: 8px;
+  fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */
