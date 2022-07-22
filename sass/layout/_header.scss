@@ -80,10 +80,31 @@
   }
 }
 
+.auth-nav__item:not(:last-child) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
+}
+
 .auth-nav__link {
   @extend %link;
 
   display: inline-flex;
   align-items: center;
   color: $secondary-text-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth-nav__icon {
+  margin-right: 8px;
+  fill: currentColor;
 }
